@@ -1,0 +1,31 @@
+
+.slideshow-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(3, 66, 17);
+    color: white;
+}
+.slideshow-content{
+    position: absolute;
+    transform: translate(-50%,-50%) scale(0);
+    transition: transform 0.6s;
+}
+.slideshow-content h2{
+    font-size: 5rem;
+}
+.slideshow-content i{
+    font-size: 3rem;
+}
+.icon-box{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(184, 179, 179) !important;
+    border-radius: 90px;
+}
+.slideshow-content.current{
+    transform: translate(-50%,-50%) scale(1);
+    transition: transform 0.6s;
+}
